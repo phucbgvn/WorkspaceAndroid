@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="tll_r_c4_roman">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/txtartist</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:textSize">@dimen/textSize_14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/txttitle</item>
+    </style>
+
+    <style name="text_artist">
+        <item name="android:textSize">@dimen/textSize_8sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/txtartist</item>
+    </style>
+
+    <style name="text_fullpath">
+        <item name="android:textSize">@dimen/textSize_8sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/txtartist</item>
+    </style>
+
+    <style name="text_page">
+        <item name="android:textSize">@dimen/textSize_18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

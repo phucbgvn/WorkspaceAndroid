@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="font_time_new_roman">/fonts/font_time_new.ttf</string>    
+	<string name="font_hero">/fonts/font_time_new.ttf</string>    
+	<string name="font_tahoma">/fonts/font_time_new.ttf</string>    
+	
+</resources>

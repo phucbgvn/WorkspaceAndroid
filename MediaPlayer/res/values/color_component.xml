@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txtartist">#EEEEEE</color>
+    <color name="txttitle">#C9C299</color>
+    <color name="divider">#cdc9c9</color>
+    <color name="background">#000000</color>
+    <color name="color_b2b2b2_80">#CCb2b2b2</color>
+
+</resources>

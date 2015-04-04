@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.phudx1.mediaplayer.MediaActivity" >
+
+    <RelativeLayout
+        android:id="@+id/layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/bt_time"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/back_page"
+                android:layout_width="@dimen/width_44dp"
+                android:layout_height="@dimen/width_44dp"
+                android:background="@drawable/back_pagexml"
+                android:onClick="onClick" />
+
+            <TextView
+                android:id="@+id/text_page"
+                style="@style/text_page"
+                android:layout_width="@dimen/width_100dp"
+                android:layout_height="@dimen/width_44dp"
+                android:enabled="false"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_width="@dimen/width_44dp"
+                android:layout_height="@dimen/width_44dp"
+                android:background="@drawable/next_pagexml"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_time"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/time_machine"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listmediaplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_button"
+        android:layout_below="@+id/layout_control"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/list_selector"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="@dimen/scrollbarSize"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@color/color_b2b2b2_80"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_footer_2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop" >
+
+        <Button
+            android:id="@+id/bt_suf"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_marginEnd="@dimen/marginend_6dp"
+            android:background="@drawable/suff"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/bt_prev"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_marginEnd="@dimen/marginend_6dp"
+            android:background="@drawable/prev_button"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/bt_play"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_marginEnd="@dimen/marginend_6dp"
+            android:background="@drawable/playxml"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/bt_pause"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_marginEnd="@dimen/marginend_6dp"
+            android:background="@drawable/pausexml"
+            android:onClick="onClick"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_next"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:layout_marginEnd="@dimen/marginend_6dp"
+            android:background="@drawable/next_button"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/bt_repeatmost"
+            android:layout_width="@dimen/width_44dp"
+            android:layout_height="@dimen/width_44dp"
+            android:background="@drawable/loop"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+</RelativeLayout>

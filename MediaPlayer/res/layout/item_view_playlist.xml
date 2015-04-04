@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp"
+    android:paddingStart="0dp" >
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageviewSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/marginEnd_10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contentDescription"
+        android:maxHeight="@dimen/dimention"
+        android:maxWidth="@dimen/dimention"
+        android:scaleType="fitCenter"
+        android:src="@drawable/media_player" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageviewSong"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txtArtist"
+        style="@style/text_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_toEndOf="@+id/imageviewSong"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txtfullpath"
+        style="@style/text_fullpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArtist"
+        android:layout_toEndOf="@+id/imageviewSong"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txtduration"
+        style="@style/text_fullpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtfullpath" />
+
+</RelativeLayout>

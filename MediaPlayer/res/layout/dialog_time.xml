@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkbox_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:button="@drawable/checkbox"
+        android:focusable="false"
+        android:text="@string/txt_check_disable" />
+
+    <TextView
+        android:id="@+id/text_time"
+        style="@style/tll_r_c4_roman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp" />
+
+    <SeekBar
+        android:id="@+id/seek_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="1000" />
+
+</LinearLayout>

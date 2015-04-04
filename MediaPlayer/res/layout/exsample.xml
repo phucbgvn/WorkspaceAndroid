@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Chronometer" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/chronometer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp" />
+
+</RelativeLayout>
